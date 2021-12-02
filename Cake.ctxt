@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=Cake
+comment1.params=ID\ cakeType\ qty
+comment1.target=Cake(java.lang.String,\ java.lang.String,\ int)
+comment2.params=ID
+comment2.target=void\ setID(java.lang.String)
+comment3.params=cakeType
+comment3.target=void\ setCakeType(java.lang.String)
+comment4.params=qty
+comment4.target=void\ setQty(int)
+numComments=5
