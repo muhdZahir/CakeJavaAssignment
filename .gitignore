@@ -1,4 +1,4 @@
-# Files created when debugging
+# Ignore files created when debugging
 *.class
 *.bluej
 *.ctxt
