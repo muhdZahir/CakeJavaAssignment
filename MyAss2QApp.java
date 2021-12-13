@@ -1,6 +1,7 @@
 import java.util.*;
 import java.io.*;
 import java.lang.*;
+import java.text.DecimalFormat;
 
 public class MyAss2QApp {
     public static void main(String[] args) throws Exception {
@@ -61,7 +62,7 @@ public class MyAss2QApp {
              * name of the highest total order
              */
 
-            int total[] = new int[4];
+            int total[] = {0, 0, 0, 0};
             String cakeNames[] = {
                     "D24 Chocolate Cake",
                     "Red Velvet",
@@ -80,8 +81,11 @@ public class MyAss2QApp {
                     total[2]++;
                 else if (temp.getCakeType().equalsIgnoreCase(cakeNames[3]))
                     total[3]++;
+
+                tempQ.enqueue(temp);
             }
 
+            System.out.println();
             System.out.println(
                     "Total quantity of D24 Chocolate Cake: " + total[0] + "\n" +
                             "Total quantity of Red Velvet Cake: " + total[1] + "\n" +
@@ -108,7 +112,35 @@ public class MyAss2QApp {
              * payment for all the orders.
              */
 
-           
+            int i = 1, totalPayment = 0;
+            DecimalFormat df = new DecimalFormat("0.00");
+            while (!tempQ.isEmpty()) {
+                Cake temp = tempQ.dequeue();
+                String delType = null;
+                double payment = temp.detPrice() * temp.geQty();
+
+                if (temp.getID().charAt(0) == 'P') {
+                    delType = "Self Pick-Up";
+                    payment += 5;
+                } else {
+                    delType = "Delivery";
+                    payment += 5;
+                }
+                totalPayment += payment;
+
+                System.out.println("++++++++++++++++++++++++++++++++++\n"
+                        + "Customer no " + i + "\n"
+                        + "++++++++++++++++++++++++++++++++++\n"
+                        + "Customer ID: " + temp.getID() + "\n"
+                        + "Cake Name: " + temp.getCakeType() + "\n"
+                        + "Price: RM " + df.format(temp.detPrice()) + "\n"
+                        + "Quantity: " + temp.geQty() + "\n"
+                        + "Delivery / Self Pick-Up: " + delType + "\n"
+                        + "Payment: RM " + df.format(payment) + "\n");
+                i++;
+            }
+            System.out.println("Total Payment: RM " + df.format(totalPayment));
+
             br.close();
             pickOut.close();
             delOut.close();
