@@ -20,5 +20,6 @@ public class JavaTestMain {
             Cake cake = new Cake(st.nextToken(), st.nextToken(), Integer.parseInt(st.nextToken()));
             System.out.println(cake.toString());
         }
+        br.close();
     }
 }
