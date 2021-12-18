@@ -1,5 +1,2 @@
 # Ignore files created when debugging
-*.class
-*.bluej
-*.ctxt
 *.launch.json
