@@ -1,0 +1,16 @@
+{
+    "folders": [
+        {
+            "path": "."
+        },
+        {
+            "path": "../CSC248_JavaGroupAssignment"
+        }
+    ],
+    "settings": {
+        "java.project.sourcePaths": [
+            "src"
+        ],
+        "java.project.outputPath": "bin"
+    }
+}

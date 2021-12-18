@@ -1,4 +1,3 @@
-
 public class Queue extends LinkedList {
     public Queue() {
     }

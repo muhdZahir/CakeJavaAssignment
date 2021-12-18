@@ -1,19 +1,19 @@
 import java.util.*;
 import java.io.*;
-import java.lang.*;
+// import java.lang.*;
 import java.text.DecimalFormat;
 
 public class MyAss2QApp {
     public static void main(String[] args) throws Exception {
 
         try {
-            BufferedReader br = new BufferedReader(new FileReader("cakeOrder.txt"));
-            PrintWriter pickOut = new PrintWriter(new FileWriter("pickup.txt"));
-            PrintWriter delOut = new PrintWriter(new FileWriter("delivery.txt"));
+            BufferedReader br = new BufferedReader(new FileReader("./lib/cakeOrder.txt"));
+            PrintWriter pickOut = new PrintWriter(new FileWriter("./lib/pickup.txt"));
+            PrintWriter delOut = new PrintWriter(new FileWriter("./lib/delivery.txt"));
             Queue cakeQ = new Queue();
             Queue tempQ = new Queue();
 
-            // a)b)c)read the data from cakeOrder.txt and insert into cakeQ
+            // a) b) c) read the data from cakeOrder.txt and insert into cakeQ
             String buffer = null;
             while ((buffer = br.readLine()) != null) {
                 StringTokenizer st = new StringTokenizer(buffer, "*");
@@ -62,7 +62,7 @@ public class MyAss2QApp {
              * name of the highest total order
              */
 
-            int total[] = {0, 0, 0, 0};
+            int total[] = { 0, 0, 0, 0 };
             String cakeNames[] = {
                     "D24 Chocolate Cake",
                     "Red Velvet",
@@ -87,9 +87,9 @@ public class MyAss2QApp {
 
             System.out.println();
             System.out.println("Total quantity of D24 Chocolate Cake: " + total[0] + "\n" +
-                            "Total quantity of Red Velvet Cake: " + total[1] + "\n" +
-                            "Total quantity of Burnt Cheese Cake: " + total[2] + "\n" +
-                            "Total quantity of Black Forest Cake: " + total[3] + "\n");
+                    "Total quantity of Red Velvet Cake: " + total[1] + "\n" +
+                    "Total quantity of Burnt Cheese Cake: " + total[2] + "\n" +
+                    "Total quantity of Black Forest Cake: " + total[3] + "\n");
 
             int highValue = 0;
             String highName = null;
