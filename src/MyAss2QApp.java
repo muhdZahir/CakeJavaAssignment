@@ -120,7 +120,6 @@ public class MyAss2QApp {
 
                 if (temp.getID().charAt(0) == 'P') {
                     delType = "Self Pick-Up";
-                    payment += 5;
                 } else {
                     delType = "Delivery";
                     payment += 5;
