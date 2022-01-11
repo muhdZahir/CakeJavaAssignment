@@ -1,6 +1,5 @@
 import java.util.*;
 import java.io.*;
-// import java.lang.*;
 import java.text.DecimalFormat;
 
 public class MyAss2QApp {

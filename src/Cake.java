@@ -7,7 +7,6 @@
  * 4) Muhammad Zahiruddin Bin Othman          2020892534
  * Class : CS1103A
  */
-// import java.lang.*;
 
 public class Cake {
    private String custID; // D001, P003
