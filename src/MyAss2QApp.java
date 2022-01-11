@@ -63,12 +63,7 @@ public class MyAss2QApp {
              */
 
             int total[] = { 0, 0, 0, 0 };
-            String cakeNames[] = {
-                    "D24 Chocolate Cake",
-                    "Red Velvet",
-                    "Burnt Cheese Cake",
-                    "Black Forest"
-            };
+            String cakeNames[] = Cake.cakeNames;
 
             while (!cakeQ.isEmpty()) {
                 Cake temp = cakeQ.dequeue();

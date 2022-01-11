@@ -14,7 +14,7 @@ public class Cake {
    private String cakeType; // D24 Chocolate Cake,Red Velvet,Burnt Cheese Cake,Black Forest
    private int qty;
    private double price;
-   private String cakeNames[] = {
+   static public String cakeNames[] = {
          "D24 Chocolate Cake",
          "Red Velvet",
          "Burnt Cheese Cake",
