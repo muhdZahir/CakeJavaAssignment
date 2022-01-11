@@ -81,7 +81,7 @@ public class Cake {
       String priceStr = String.format("%.2f", detPrice());
       String qtyStr = String.format("%d", qty);
 
-      String output = String.format("Customer ID: %-8s Cake Type: %-22s Price: RM %-9s Quantity: %-6s",
+      String output = String.format("Customer ID: %-5s Cake Type: %-20s Price: RM %-7s Quantity: %-6s",
             custID, cakeType, priceStr, qtyStr);
       return output;
    }
