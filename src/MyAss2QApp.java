@@ -80,10 +80,10 @@ public class MyAss2QApp {
             }
 
             System.out.println();
-            System.out.println("Total quantity of D24 Chocolate Cake: " + total[0] + "\n" +
-                    "Total quantity of Red Velvet Cake: " + total[1] + "\n" +
-                    "Total quantity of Burnt Cheese Cake: " + total[2] + "\n" +
-                    "Total quantity of Black Forest Cake: " + total[3] + "\n");
+            System.out.println("Total quantity of " + cakeNames[0] + ": " + total[0] + "\n" +
+                    "Total quantity of " + cakeNames[1] + ": " + total[1] + "\n" +
+                    "Total quantity of " + cakeNames[2] + ": " + total[2] + "\n" +
+                    "Total quantity of " + cakeNames[3] + ": " + total[3] + "\n");
 
             int highValue = 0;
             String highName = null;
